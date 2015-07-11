@@ -1,13 +1,8 @@
+$(document).ready( function() {
 
-console.log("extension loaded");
+	hideThemAll();
 
-// hideThemAll();
-
-// $(document).ready( function() {
-
-// 	hideThemAll();
-
-// });
+});
 
 $(window).load(function() {
 
@@ -16,60 +11,20 @@ $(window).load(function() {
 });
 
 
-
-// $(window).onLoad( function() {
-
-// 	console.log("window load loaded");
-
-// 	hideThemAll();
-
-// 	return 0;
-
-// });
-
-
 function hideThemAll() { 
 
 	console.log("hideThemAll executing");
 
-	// while(true) {
+	if( $("#commenting") ) { $("#commenting").css("display", "none"); }
 
-	try {
+	if( $(".comments-view") ) { $(".comments-view").hide(); }
 
-		$("#commenting").css("display", "none");
+	if( $("#disqus_thread") ) { $("#disqus_thread").hide(); }
 
-	} catch (e) { }
+	if( $("#showComments") ) { $("#showComments").hide(); }
+
+	if( $(".commentlist-wrap") ) { $(".commentlist-wrap").css("display", "none"); }
+
+	if( $("#js_discussion-region") ) { $("#js_discussion-region").hide(); }
 	
-	try {
-
-		$(".comments-view").hide();
-
-	} catch (e) { }
-
-	try {
-
-		$("#disqus_thread").hide();
-
-	} catch(e) { }
-
-	try {
-
-		$("#showComments").hide();
-
-	} catch(e) { }
-
-
-	// $("#comments-view").hide();
-
-	// $(".comments-marginalia").hide();
-
-	
-
-	// $(".comment").hide();
-
-	// $("#comment").hide();
-
-	// }
-	
-
 }
