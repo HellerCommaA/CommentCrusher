@@ -27,4 +27,6 @@ function hideThemAll() {
 
 	if( $("#js_discussion-region") ) { $("#js_discussion-region").hide(); }
 	
+	if( $(".fyre") ) { $(".fyre").hide(); }
+
 }
