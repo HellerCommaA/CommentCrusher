@@ -11,9 +11,10 @@ $(window).load(function() {
 });
 
 
-function hideThemAll() { 
+function hideThemAll() {
 
-	console.log("hideThemAll executing");
+	// washington post
+	if ( $(".echo-apps-conversations-allPostsContainer") ) { $(".echo-apps-conversations-allPostsContainer").hide() }
 
 	if( $("#commenting") ) { $("#commenting").css("display", "none"); }
 
@@ -26,7 +27,7 @@ function hideThemAll() {
 	if( $(".commentlist-wrap") ) { $(".commentlist-wrap").css("display", "none"); }
 
 	if( $("#js_discussion-region") ) { $("#js_discussion-region").hide(); }
-	
+
 	if( $(".fyre") ) { $(".fyre").hide(); }
 
 }
