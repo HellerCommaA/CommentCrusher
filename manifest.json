@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Comment Crusher",
     "description": "This extension blocks stupid and agrivating comment sections on websites!",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "icons": {
         "16": "icon.png",
         "48": "icon.png",
@@ -15,7 +15,7 @@
             ],
             "js": [
                 "jquery-1.11.3.min.js",
-                "helloworld.js"
+                "main.js"
             ]
         }
     ],
