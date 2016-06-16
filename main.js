@@ -13,8 +13,14 @@ $(window).load(function() {
 
 function hideThemAll() {
 
+	// facebook iframe
+	if( $(".comments-embed") ) { $(".comments-embed").hide(); }
+
+	// generic comments -- may be buggy, not very specific.
+	if( $("#comments-container") ) { $("#comments-container").hide(); }
+
 	// washington post
-	if ( $(".echo-apps-conversations-allPostsContainer") ) { $(".echo-apps-conversations-allPostsContainer").hide() }
+	if( $(".echo-apps-conversations-allPostsContainer") ) { $(".echo-apps-conversations-allPostsContainer").hide() }
 
 	if( $("#commenting") ) { $("#commenting").css("display", "none"); }
 
@@ -28,6 +34,6 @@ function hideThemAll() {
 
 	if( $("#js_discussion-region") ) { $("#js_discussion-region").hide(); }
 
-	if( $(".fyre") ) { $(".fyre").hide(); }
+	if( $(".fyre") || $("#fyre")) { $(".fyre").css("display", "none"); $("#fyre").css("display", "none"); }
 
 }
