@@ -1,4 +1,4 @@
-0.1.4:
+0.1.5:
 added facebook injected iframe
 added a generic comments-container (found on politico i think?)
 fixed up fyre
